@@ -1,0 +1,265 @@
+$font-size-base: 1rem;
+$primary: #fed136;
+$secondary: #f7f7f7;
+$header-jumbotron-height: 300px;
+$section-padding: 120px;
+$border-company: 5px solid #FFF;
+$page-size-moving: 200px;
+
+@import "lib/bootstrap-4.4.1/scss/bootstrap.scss";
+
+
+// === Mobile-Navigationsleiste ===
+
+body{
+    overflow-x: hidden;
+}
+
+#header-move{
+    position: relative;
+    left: 0px;
+    transition: 1s all;
+    transform: translate(0px, 0px);
+
+    &.mobile-nav-opened{
+        transform: translate(-$page-size-moving, 0px);
+    }
+}
+
+.mobile-nav{
+    position: fixed;
+    right: -$page-size-moving;
+    width: $page-size-moving;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(71, 70, 70);
+}
+
+.mobile-nav-link{
+    color: #FFF;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    background-color: rgb(71, 70, 70);
+
+    &:hover{
+    background-color: $primary;
+    color: #000;
+    }
+
+    &:last-child{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+
+    &:first-child{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    }
+}
+
+
+// === Navigationsleiste ===
+
+.page-header {
+  background-image: url("img/header-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.navbar-dark .navbar-brand {
+  padding-top: 0.2rem;
+  color: $primary;
+  font-style: italic;
+}
+
+.navbar-dark .navbar-nav .nav-item:hover {
+    color: $primary;
+    }
+
+
+// === Jumbotron ===
+
+.header-jumbotron {
+  background-color: transparent;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  height: $header-jumbotron-height;
+
+  @include media-breakpoint-up(sm) {
+    height: $header-jumbotron-height + 50px;
+  }
+  @include media-breakpoint-up(md) {
+    height: $header-jumbotron-height + 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: $header-jumbotron-height + 150px;
+  }
+
+  h2 {
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+
+// === Services ===
+
+.services{
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+    .services-icon{
+        font-size: 2rem;
+        border: 2px solid $primary;
+
+        padding-top: .5rem;
+        text-align: center;
+        color: $primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        margin: 0 auto .75rem auto;
+    }
+}
+
+.services-beschreibung{
+    font-size: .8rem;
+}
+
+
+// === Portfolio ===
+
+.portfolio{
+    background-color: $secondary;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+}
+
+
+// === Über uns Bereich ===
+
+.aboutUs{
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+    .aboutUs-image{
+        border-radius: 50%;
+        border: 5px solid $secondary;
+    }
+
+    // Nachfolgend alles für den grauen Strich zwischen den Bildern
+
+    @include media-breakpoint-up(md) {
+
+    .aboutUs-list{
+        background: linear-gradient(
+        to right,
+         white 0%,
+         white calc(50% - 1px), 
+         $secondary calc(50% - 1px), 
+         $secondary calc(50% + 1px), 
+         white calc(50% + 1px), 
+         white 100%
+         );
+
+    .row:last-child{
+        background: #FFF;
+            }
+         }
+    }
+}
+
+
+// === Team-Bereich ===
+
+.teambereich{
+    background: $secondary;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+.team-image{
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+    border: $border-company;
+    }
+
+.team-social-media{
+    color: #000;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    text-align: center;
+    margin: 0.4rem 0.2rem 0.2rem 0.2rem;
+
+    &:hover{
+        text-decoration: none;
+      }
+    }
+}
+
+
+// === Kontakt-Bereich ===
+
+.contact{
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    background-color: black;
+    color: #FFF;
+
+    .button{
+        background-color: $primary;
+        color: #FFF;
+    }
+
+    .contact-message{
+        height: 6rem;
+
+        @include media-breakpoint-up(sm) {
+        height: 100%;
+        }
+    }
+}
+
+
+// === Footer ===
+
+.footer{
+
+    .copyright-symbol{
+        font-size: .5rem;
+    }
+
+    .social-media{
+        color: #FFF;
+        background-color: #000;
+        font-size: 1rem;
+        border: 2px solid #000;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        text-align: center;
+        margin: 0.4rem 0.2rem 0.2rem 0.2rem;
+    
+        &:hover{
+            text-decoration: none;
+          }
+        }
+
+    .copyright-text{
+        font-size: .9rem;
+    }
+}

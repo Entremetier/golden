@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" text="text/css" href="index.css">
+
+    <title>Welcome to Golden</title>
+</head>
+<body>
+
+    <div id="header-move" class=""> <!-- mobile-nav-opened -->
+
+
+            <!-- === Mobile-Navigationsleiste === -->
+
+        <nav class="mobile-nav list-group">
+            <a class="mobile-nav-link list-group-item list-group-item-action text-center" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="mobile-nav-link list-group-item list-group-item-action text-center" href="#services">Dienstleistungen</a>
+            <a class="mobile-nav-link list-group-item list-group-item-action text-center" href="#portfolio">Portfolio</a>
+            <a class="mobile-nav-link list-group-item list-group-item-action text-center" href="#team">Unser Team</a>
+            <!-- &nbsp; zeigt dem Browser an das an dieser Stelle ein Zeilenumbruch gemacht werden soll,
+                            aber in wirklichkeit gar keiner da ist none breaking space = nbsp -->
+            <a class="mobile-nav-link list-group-item list-group-item-action text-center" href="#aboutUs">Über&nbsp;uns</a>
+            <a class="mobile-nav-link list-group-item list-group-item-action text-center" href="#contact">Kontakt</a>
+        </nav>
+
+
+            <!-- === Navigationsleiste mit Hintergrundbild=== -->
+
+        <header class="page-header">
+
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <a class="navbar-brand" href="#">Golden</a>
+                    <button id="toggle-mobile-nav" class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#services">Dienstleistungen</a>
+                        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-item nav-link" href="#team">Unser Team</a>
+
+                        <!-- &nbsp; zeigt dem Browser an das an dieser Stelle ein Zeilenumbruch gemacht werden soll,
+                            aber in wirklichkeit gar keiner da ist none breaking space = nbsp -->
+                        <a class="nav-item nav-link" href="#aboutUs">Über&nbsp;uns</a>
+                        <a class="nav-item nav-link" href="#contact">Kontakt</a>
+                    </div>
+                    </div>
+                </nav>
+
+
+            <!-- === Jumbotron === -->
+
+                <div class="jumbotron header-jumbotron text-center d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="display-6">Herzlich Willkommen!</h2>
+                    <h1 class="display-5">Wir entwickeln Ihre Website</h1></p>
+                    <a class="btn btn-primary" href="#services" role="button">Mehr anzeigen</a>
+                </div>
+
+            </div>
+
+        </header>
+    </div>
+
+
+            <!-- === Services === -->
+
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <h3 class="text-center font-weight-bolder">Dienstleistungen</h3>
+                <p class="text-center text-muted font-italic mb-5">Wir bieten tolle Dienstleistungen an</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="services-icon text-center">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <h6 class="font-weight-bolder text-center">E-Commerce</h6>
+                        <p class="services-beschreibung text-center text-muted font-italic">Lorem ipsum at assumenda aliquam, ex quia quos dicta error saepe asperiores? Lorem ipsum at assumenda aliquam, ex quia quos dicta error saepe.</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="services-icon text-center">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h6 class="font-weight-bolder text-center">Responsive Web</h6>
+                        <p class="services-beschreibung text-center text-muted font-italic">Lorem ipsum at assumenda aliquam, ex quia quos dicta error saepe asperiores? Lorem ipsum at assumenda aliquam, ex quia quos dicta error saepe.</p>
+                    </div>
+                    <div class="col-sm">
+                        <div class="services-icon text-center">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h6 class="font-weight-bolder text-center">Sicherheit</h6>
+                        <p class="services-beschreibung text-center text-muted font-italic">Lorem ipsum at assumenda aliquam, ex quia quos dicta error saepe asperiores? Lorem ipsum at assumenda aliquam, ex quia quos dicta error saepe.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+            <!-- === Portfolio & Cards === -->
+
+        <section class="portfolio" id="portfolio">
+
+            <div class="container">
+
+                <h3 class="portfolio-headline text-center font-weight-bolder text-uppercase">Unser Portfolio</h3>
+                <p class="portfolio-text text-center text-muted font-italic mb-5">Lorem, ipsum  possimus expedita asperiores maiores.</p>
+
+                <div class="card-deck mb-4">
+                    <div class="card">
+                    <img src="img/services/bild1.jpg" class="card-img-top" alt="Urlaub in Norwegen">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder text-center">Norwegen</h5>
+                        <h6 class="card-subtitle mb-2 text-muted font-italic text-center">Card subtitle</h6>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="img/services/bild2.jpg" class="card-img-top" alt="Urlaub in Italien">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder text-center">Italien</h5>
+                        <h6 class="card-subtitle mb-2 text-muted font-italic text-center">Card subtitle</h6>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="img/services/bild3.jpg" class="card-img-top" alt="Rom, blick auf den Vatikan">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder text-center">Rom</h5>
+                        <h6 class="card-subtitle mb-2 text-muted font-italic text-center">Card subtitle</h6>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="card-deck">
+                    <div class="card">
+                    <img src="img/services/bild4.jpg" class="card-img-top" alt="Eine Mall in Amerika">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder text-center">Mall</h5>
+                        <h6 class="card-subtitle mb-2 text-muted font-italic text-center">Card subtitle</h6>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="img/services/bild5.jpg" class="card-img-top" alt="Arbeiten">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder text-center">Work</h5>
+                        <h6 class="card-subtitle mb-2 text-muted font-italic text-center">Card subtitle</h6>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="img/services/bild6.jpg" class="card-img-top" alt="Eine saftige Orange">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bolder text-center">Food</h5>
+                        <h6 class="card-subtitle mb-2 text-muted font-italic text-center">Card subtitle</h6>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+            <!-- === Über uns Bereich === -->
+
+        <section class="aboutUs" id="aboutUs">
+
+            <div class="container">
+                <h3 class="text-center font-weight-bolder">Über uns</h3>
+                <p class="text-center text-muted mb-5 font-italic">Das ist unsere Geschichte</p>
+
+                <div class="aboutUs-list">
+                    <div class="row">
+                        <div class="col-6 offset-3 offset-sm-0 col-sm-3 col-md-2 order-1 order-md-2">
+                            <img class="img-fluid aboutUs-image mb-2" src="img/aboutus/architektur-gebaude-hochhaus-599459.jpg" alt="Die Stadt in der unsere Anfänge waren">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-5 order-2 order-md-1">
+                        <h5 class="h6 text-center text-sm-left font-weight-bolder mb-1 text-md-right">Juli 2010</h5>
+                        <h6 class="text-center font-weight-bolder text-sm-left text-md-right">Unsere Anfänge</h6>
+                        <p class="text-muted text-center text-sm-left text-md-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dicta aspernatur similique assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offset-3 offset-sm-0 offset-md-5 col-sm-3 col-md-2 order-1 order-sm-2 order-md-1">
+                            <img class="img-fluid aboutUs-image mb-2 mt-3 mt-sm-0" src="img/aboutus/berge-canyon-dammerung-965154.jpg" alt="Die Berge die wir überwunden haben">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-5 order-2 order-sm-1 order-md-2">
+                        <h5 class="h6 text-center text-sm-right font-weight-bolder mb-1 text-md-left">Januar 2011</h5>
+                        <h6 class="text-center font-weight-bolder text-sm-right text-md-left">Anfangsschwierigkeiten</h6>
+                        <p class="text-muted text-center text-sm-right text-md-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dicta aspernatur similique assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offset-3 offset-sm-0 col-sm-3 col-md-2 order-1 order-md-2">
+                            <img class="img-fluid aboutUs-image mb-2" src="img/aboutus/dammerung-draussen-felsen-946351.jpg" alt="Nachts ist es dunkler als draussen">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-5 order-2 order-md-1">
+                        <h5 class="h6 text-center text-sm-left font-weight-bolder mb-1 text-md-right">Dezember 2015</h5>
+                        <h6 class="text-center font-weight-bolder text-sm-left text-md-right">Dem Gipfel ganz nah</h6>
+                        <p class="text-muted text-center text-sm-left text-md-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dicta aspernatur similique assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offset-3 offset-sm-0 offset-md-5 col-sm-3 col-md-2 order-1 order-sm-2 order-md-1">
+                            <img class="img-fluid aboutUs-image mb-2 mt-3 mt-sm-0" src="img/aboutus/globus-hand-makro-1275393.jpg" alt="Was wollen wir tun Brain?">
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-5 order-2 order-sm-1 order-md-2">
+                        <h5 class="h6 text-center text-sm-right font-weight-bolder mb-1 text-md-left">Mai 2019</h5>
+                        <h6 class="text-center font-weight-bolder text-sm-right text-md-left">Zeit weiter zu wachsen</h6>
+                        <p class="text-muted text-center text-sm-right text-md-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dicta aspernatur similique assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+            <!-- === Team-Bereich === -->
+
+        <section class="teambereich" id="team">
+
+            <div class="container">
+
+                <h3 class="text-center font-weight-bolder">Das ist unser Team</h3>
+                <p class="text-center text-muted mb-5 font-italic mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-6 offset-3 col-md-8 offset-md-2">
+                        <img class="img-fluid team-image mb-2" src="img/team/profile-picture-kopie.jpg" alt="Der Boss" />
+                        </div>
+                    </div>
+                    <h5 class="h6 text-center">Marco Happe</h5>
+                    <h6 class="text-center text-muted">Geschäftsführer</h6>
+                    <div class="d-flex justify-content-center">
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-6 offset-3 col-md-8 offset-md-2">
+                        <img class="img-fluid team-image mb-2" src="img/team/hr.jpg" alt="Bild der verantwotlichen für das HR" />
+                        </div>
+                    </div>
+                    <h5 class="h6 text-center">Elle Macpherson</h5>
+                    <h6 class="text-center text-muted">Human Resources</h6>
+                    <div class="d-flex justify-content-center">
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-6 offset-3 col-md-8 offset-md-2">
+                        <img class="img-fluid team-image mb-2" src="img/team/public-relations.jpeg" alt="Bild vom verantwortlichen für public-relations" />
+                        </div>
+                    </div>
+                    <h5 class="h6 text-center">Kurt Cobain</h5>
+                    <h6 class="text-center text-muted">Public Relations</h6>
+                    <div class="d-flex justify-content-center">
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="team-social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+        </section>
+
+
+            <!-- === Kontakt-Bereich === -->
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+                <h3 class="text-center font-weight-bolder">Kontaktformular</h3>
+                <p class="text-center text-muted mb-5 font-italic mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+
+                <form action="GET" action="#">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <input class="form-control mb-3" type="text" name="name" placeholder="DEIN NAME *" required>
+                        <input class="form-control mb-3" type="email" name="email" placeholder="DEINE E-MAIL *" required>
+                        <input class="form-control mb-3 mb-sm-0" type="text" name="subject" placeholder="BETREFF">
+                    </div>
+                <div class="col-12 col-sm-6">
+                    <textarea class="form-control contact-message" name="message" placeholder="DEINE NACHRICHT *" required></textarea>
+                </div>
+                </div>
+                <div class="text-center">
+                    <button class="text-center btn btn-lg button mt-3" type="submit" name="submit-button">Abschicken</button>
+                </div>
+                </form>
+
+            </div>
+
+        </section>
+
+
+            <!-- === Footer === -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-4 mb-4 d-flex justify-content-center">
+                        <p class="ml-1 mt-2 mr-5 copyright-text">&copy;Copyright 2020 Marco Happe</p>
+                        <div class="d-flex justify-content-center">
+                        <a class="social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social-media d-flex flex-column justify-content-center" href="#">
+                        <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <script type="text/javascript" src="lib/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
